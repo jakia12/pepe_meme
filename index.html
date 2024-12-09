@@ -190,6 +190,21 @@
       }
       /*********anon gallery************/
 
+      .btn_cl {
+        background-color: #ffffff;
+        padding: 20px 24px 20px 24px;
+        border-radius: 12px 12px 12px 12px;
+        font-family: "Pragati Narrow", Sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 2.88px;
+        color: var(--e-global-color-text);
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: var(--e-global-color-text);
+        box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.97);
+      }
       .slider {
         padding-top: 2.5vw;
         height: auto;
@@ -264,14 +279,49 @@
       .tkn_imgt {
         width: 300px;
       }
+      .subttl h2 {
+        font-family: "peFont", Sans-serif;
+        font-weight: 400;
+        line-height: 240px;
+        letter-spacing: -2.7px;
+        -webkit-text-stroke-width: 3px;
+        stroke-width: 5px;
+        -webkit-text-stroke-color: #f39c12;
+        stroke: #f39c12;
+        text-shadow: 0px 2px 0px #f39c12;
+        color: #fff;
+        font-size: 144px;
+      }
 
       @media screen and (max-width: 768px) {
+        .ttl {
+          font-size: 90px;
+        }
+        .subttl h2 {
+          font-family: "peFont", Sans-serif;
+          font-weight: 400;
+          line-height: 240px;
+          letter-spacing: -2.7px;
+          -webkit-text-stroke-width: 3px;
+          stroke-width: 5px;
+          -webkit-text-stroke-color: #f39c12;
+          stroke: #f39c12;
+          text-shadow: 0px 2px 0px #f39c12;
+          color: #fff;
+          font-size: 80px;
+        }
         .tkn_img {
           width: 100%;
           height: 280px;
         }
         .tkn_imgt {
           width: 100%;
+        }
+        .catxt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
         }
       }
     </style>
@@ -1508,65 +1558,11 @@
                     CONTRACT ADDRESS
                   </h2>
                 </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-16f2ba4c elementor-hidden-mobile elementor-hidden-tablet elementor-widget elementor-widget-ctc_copy_button"
-                data-id="16f2ba4c"
-                data-element_type="widget"
-                data-widget_type="ctc_copy_button.default"
-              >
-                <div class="elementor-widget-container">
-                  <div class="ctc-block ctc-copy-button">
-                    <div class="ctc-block-actions">
-                      <button
-                        class="ctc-block-copy ctc-with-icon"
-                        copy-as-raw="yes"
-                        data-copied="Copied!"
-                      >
-                        <span class="ctc-button-text"
-                          >xxxxxxxxxxxxxxxxxxxxxxxx</span
-                        ><svg
-                          aria-hidden="true"
-                          focusable="false"
-                          role="img"
-                          class="copy-icon"
-                          viewBox="0 0 16 16"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"
-                          ></path>
-                          <path
-                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"
-                          ></path></svg
-                        ><svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="check-icon"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <textarea
-                      selection-target=""
-                      class="ctc-copy-content"
-                      style="display: none"
-                    >
-xxxxxxxxxxxxxxxxxxxxxxxx</textarea
-                    >
-                  </div>
+                <div class="catxt">
+                  <button class="btn_cl">xxxxxxxxxxxxxxxxxxxxxxxxx</button>
                 </div>
               </div>
+
               <div
                 class="elementor-element elementor-element-67d1e874 elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-ctc_copy_button"
                 data-id="67d1e874"
@@ -1699,7 +1695,6 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                     src="/assets/img/blue-hat.png"
                     class="attachment-full size-full wp-image-625"
                     alt=""
-                    style="max-width: 580px"
                   />
                 </div>
               </div>
@@ -1716,69 +1711,18 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                 data-widget_type="heading.default"
               >
                 <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
+                  <h2
+                    class="elementor-heading-title elementor-size-default"
+                    style="color: #fff"
+                  >
                     CONTRACT ADDRESS
                   </h2>
                 </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-27999dc1 elementor-hidden-desktop elementor-hidden-laptop elementor-widget elementor-widget-ctc_copy_button"
-                data-id="27999dc1"
-                data-element_type="widget"
-                data-widget_type="ctc_copy_button.default"
-              >
-                <div class="elementor-widget-container">
-                  <div class="ctc-block ctc-copy-button">
-                    <div class="ctc-block-actions">
-                      <button
-                        class="ctc-block-copy ctc-with-icon"
-                        copy-as-raw="yes"
-                        data-copied="Copied!"
-                      >
-                        <span class="ctc-button-text"
-                          >xxxxxxxxxxxxxxxxxxxxxxxx</span
-                        ><svg
-                          aria-hidden="true"
-                          focusable="false"
-                          role="img"
-                          class="copy-icon"
-                          viewBox="0 0 16 16"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"
-                          ></path>
-                          <path
-                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"
-                          ></path></svg
-                        ><svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="check-icon"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <textarea
-                      selection-target=""
-                      class="ctc-copy-content"
-                      style="display: none"
-                    >
-xxxxxxxxxxxxxxxxxxxxxxxx</textarea
-                    >
-                  </div>
+                <div class="catxt">
+                  <button class="btn_cl">xxxxxxxxxxxxxxxxxxxxxxxxx</button>
                 </div>
               </div>
+
               <div
                 class="elementor-element elementor-element-9b37e01 elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
                 data-id="9b37e01"
@@ -1805,6 +1749,7 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                   <div class="elementor-widget-container">
                     <a
                       href="dexslink"
+                      style="background-color: #f39c12"
                       class="xpro-elementor-button xpro-button-bg-animation hvr-rectangle-out xpro-align-icon-right"
                     >
                       <span class="xpro-elementor-button-inner">
@@ -1822,15 +1767,10 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                   <div class="elementor-widget-container">
                     <a
                       href="dextlink"
+                      style="background-color: #f39c12; color: #fff"
                       class="xpro-elementor-button xpro-button-bg-animation hvr-rectangle-out xpro-align-icon-left"
                     >
                       <span class="xpro-elementor-button-inner">
-                        <span class="xpro-elementor-button-media"
-                          ><i
-                            aria-hidden="true"
-                            class="elementoricon elementor-iconvector"
-                          ></i
-                        ></span>
                         <span class="xpro-button-text">Dextools</span>
                       </span>
                     </a>
@@ -2544,24 +2484,8 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
               data-element_type="widget"
               data-widget_type="heading.default"
             >
-              <div class="elementor-widget-container">
-                <h2
-                  class="elementor-heading-title elementor-size-default"
-                  style="
-                    font-family: 'peFont', Sans-serif;
-                    font-size: 150px;
-                    font-weight: 400;
-                    line-height: 240px;
-                    letter-spacing: -2.7px;
-                    -webkit-text-stroke-width: 3px;
-                    stroke-width: 5px;
-                    -webkit-text-stroke-color: #f39c12;
-                    stroke: #f39c12;
-                    text-shadow: 0px 2px 0px #f39c12;
-                  "
-                >
-                  Tokenomics
-                </h2>
+              <div class="subttl">
+                <h2>Tokenomics</h2>
               </div>
             </div>
             <div
@@ -2790,52 +2714,15 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                 data-id="22f31f85"
                 data-element_type="widget"
                 data-widget_type="image.default"
-              >
-                <div class="elementor-widget-container">
-                  <video width="500" height="500" autoplay="" loop="" muted="">
-                    <source
-                      src="/assets/video/sticker4.webm"
-                      type="video/mp4"
-                    />
-                    <source src="movie.ogg" type="video/ogg" />
-                    Your browser does not support the video tag.         
-                  </video>
-                  <!-- <img
-                    decoding="async"
-                    width="1125"
-                    height="1125"
-                    src=
-                    class="attachment-full size-full wp-image-625"
-                    alt=""
-                   
-                    sizes="(max-width: 1125px) 100vw, 1125px"
-                  /> -->
-                </div>
-              </div>
+              ></div>
               <div
                 class="elementor-element elementor-element-76e6892e elementor-hidden-mobile elementor-widget elementor-widget-heading"
                 data-id="76e6892e"
                 data-element_type="widget"
                 data-widget_type="heading.default"
               >
-                <div class="elementor-widget-container">
-                  <h2
-                    class="elementor-heading-title elementor-size-default"
-                    style="
-                      font-family: 'peFont', Sans-serif;
-                      font-size: 110px;
-                      font-weight: 400;
-
-                      letter-spacing: -2.7px;
-                      -webkit-text-stroke-width: 3px;
-                      stroke-width: 5px;
-                      -webkit-text-stroke-color: #f39c12;
-                      stroke: #f39c12;
-                      text-shadow: 0px 2px 0px #f39c12;
-                    "
-                  >
-                    $PEPE Community
-                  </h2>
+                <div class="subttl">
+                  <h2>$PEPE Community</h2>
                 </div>
               </div>
               <div
@@ -2849,7 +2736,7 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                     class="elementor-heading-title elementor-size-default"
                     style="
                       font-family: 'peFont', Sans-serif;
-                      font-size: 90px;
+                      font-size: 70px;
                       font-weight: 400;
 
                       letter-spacing: -2.7px;
