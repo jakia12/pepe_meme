@@ -205,6 +205,7 @@
         border-color: var(--e-global-color-text);
         box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.97);
       }
+      /* General Slider Styling */
       .slider {
         padding-top: 2.5vw;
         height: auto;
@@ -218,7 +219,7 @@
 
       .slide-track {
         display: flex;
-        width: calc(25vw * 18);
+        width: calc(25vw * 18); /* Desktop calculation */
         animation: scroll 40s linear infinite;
       }
 
@@ -231,31 +232,13 @@
           transform: translate(0);
         }
         100% {
-          transform: translate(calc(-25vw * 9));
+          transform: translate(calc(-25vw * 9)); /* Move slides horizontally */
         }
       }
 
-      .slide-track1 {
-        display: flex;
-        width: calc(25vw * 18);
-        animation: scrolling 40s linear infinite alternate-reverse;
-      }
-
-      .slide-track1:hover {
-        animation-play-state: paused;
-      }
-
-      @keyframes scrolling {
-        0% {
-          transform: translate(0);
-        }
-        100% {
-          transform: translate(calc(-25vw * 9));
-        }
-      }
-
+      /* Individual Slide */
       .slide {
-        height: 20vw;
+        height: 20vw; /* Desktop size */
         width: 20vw;
         display: flex;
         align-items: center;
@@ -266,6 +249,50 @@
       .slide > img {
         width: 100%;
         border-radius: 10px !important;
+        transition: transform 1s;
+      }
+
+      .slide img:hover {
+        transform: translateZ(20px); /* 3D hover effect */
+      }
+
+      /* Responsive Design for Phones */
+      @media (max-width: 768px) {
+        .slide-track {
+          width: calc(100vw * 10); /* Ensure smooth sliding */
+          animation: scroll-phone 40s linear infinite;
+        }
+
+        @keyframes scroll-phone {
+          0% {
+            transform: translate(0);
+          }
+          100% {
+            transform: translate(
+              calc(-100vw * 5)
+            ); /* Adjust for one image view */
+          }
+        }
+
+        .slide {
+          height: 80vw; /* Make images larger on small screens */
+          width: 100vw; /* Display one image at a time */
+          padding: 0; /* Remove extra padding */
+        }
+
+        .slide > img {
+          width: 100%;
+        }
+        .subttl {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .subttl h2 {
+          font-size: 36px; /* Adjust heading size */
+          line-height: 50px;
+          -webkit-text-stroke-width: 1px; /* Thinner strokes for smaller screens */
+        }
       }
 
       .slide img:hover {
@@ -292,10 +319,23 @@
         color: #fff;
         font-size: 144px;
       }
-
+      .subttl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mmbg {
+        padding: 10px 0 170px;
+      }
       @media screen and (max-width: 768px) {
         .ttl {
           font-size: 90px;
+        }
+        .mmbg {
+          padding: 0px 0 40px;
+        }
+        .memes {
+          display: none;
         }
         .subttl h2 {
           font-family: "peFont", Sans-serif;
@@ -2561,32 +2601,9 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
             </div>
           </div>
           <!-- memes gallery -->
-          <section style="padding: 10px 0 100px">
-            <div
-              class="elementor-element elementor-element-216bfab elementor-widget elementor-widget-heading"
-              data-id="216bfab"
-              data-element_type="widget"
-              data-widget_type="heading.default"
-            >
-              <div class="elementor-widget-container">
-                <h2
-                  class="elementor-heading-title elementor-size-default"
-                  style="
-                    font-family: 'peFont', Sans-serif;
-                    font-size: 150px;
-                    font-weight: 400;
-                    line-height: 240px;
-                    letter-spacing: -2.7px;
-                    -webkit-text-stroke-width: 3px;
-                    stroke-width: 5px;
-                    -webkit-text-stroke-color: #f39c12;
-                    stroke: #f39c12;
-                    text-shadow: 0px 2px 0px #f39c12;
-                  "
-                >
-                  Memes
-                </h2>
-              </div>
+          <section class="mmbg">
+            <div class="subttl memes">
+              <h2>Memes</h2>
             </div>
             <div class="slider">
               <div class="slide-track">
@@ -2641,44 +2658,10 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
                 </div>
               </div>
             </div>
-            <!-- <div class="slider">
-			  <div class="slide-track slide-track1">
-				<div class="slide">
-				  <img src="/assets/img/meme (1).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (2).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (3).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (4).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (1).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (1).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (2).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (3).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (4).jpg" alt="slide" />
-				</div>
-				<div class="slide">
-				  <img src="/assets/img/meme (1).jpg" alt="slide" />
-				</div>
-			  </div>
-			</div> -->
           </section>
           <div
             class="elementor-element elementor-element-ffc632c e-con-full e-flex e-con e-child"
-            style="background-color: #f39c12"
+            style="background-color: #f39c12; margin-top: 0"
             data-id="ffc632c"
             data-element_type="container"
             data-settings='{"background_background":"classic"}'
