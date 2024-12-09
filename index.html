@@ -188,6 +188,91 @@
         src: url("/font/GentyDemo-Regular.ttf") format("woff2"),
           url("/font/GentyDemo-Regular.ttf") format("woff");
       }
+      /*********anon gallery************/
+
+      .slider {
+        padding-top: 2.5vw;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      .slide-track {
+        display: flex;
+        width: calc(25vw * 18);
+        animation: scroll 40s linear infinite;
+      }
+
+      .slide-track:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translate(0);
+        }
+        100% {
+          transform: translate(calc(-25vw * 9));
+        }
+      }
+
+      .slide-track1 {
+        display: flex;
+        width: calc(25vw * 18);
+        animation: scrolling 40s linear infinite alternate-reverse;
+      }
+
+      .slide-track1:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes scrolling {
+        0% {
+          transform: translate(0);
+        }
+        100% {
+          transform: translate(calc(-25vw * 9));
+        }
+      }
+
+      .slide {
+        height: 20vw;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+      }
+
+      .slide img {
+        width: 100%;
+      }
+
+      .slide img:hover {
+        transform: translateZ(20px);
+        transition: transform 1s;
+      }
+      .tkn_img {
+        width: 300px;
+        height: 280px;
+      }
+      .tkn_imgt {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .tkn_img {
+          width: 100%;
+          height: 280px;
+        }
+        .tkn_imgt {
+          width: 100%;
+        }
+      }
     </style>
     <link
       rel="stylesheet"
@@ -2445,251 +2530,8 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
         data-settings='{"background_background":"classic"}'
       >
         <div class="e-con-inner">
-          <div
-            class="elementor-element elementor-element-5389d08b e-con-full e-flex e-con e-child"
-            data-id="5389d08b"
-            data-element_type="container"
-          >
-            <div
-              class="elementor-element elementor-element-06199f7 e-grid e-con-full e-con e-child"
-              data-id="06199f7"
-              data-element_type="container"
-            >
-              <div
-                class="elementor-element elementor-element-5b5a776 e-con-full e-flex e-con e-child"
-                data-id="5b5a776"
-                data-element_type="container"
-              >
-                <div
-                  class="elementor-element elementor-element-c696579 elementor-widget elementor-widget-video"
-                  data-id="c696579"
-                  data-element_type="widget"
-                  data-settings='{"video_type":"hosted","autoplay":"yes","play_on_mobile":"yes","mute":"yes","loop":"yes"}'
-                  data-widget_type="video.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      class="e-hosted-video elementor-wrapper elementor-open-inline"
-                    >
-                      <!-- <video
-                        class="elementor-video"
-                        src="https://sproto.io/wp-content/uploads/2024/11/video11.mp4"
-                        autoplay=""
-                        loop=""
-                        muted="muted"
-                        playsinline=""
-                        controlsList="nodownload"
-                      ></video> -->
-                      <video
-                        width="500"
-                        height="500"
-                        autoplay=""
-                        loop=""
-                        muted=""
-                        class="elementor-video"
-                        style="background-color: transparent"
-                      >
-                        <source src="/assets/video/5.webm" type="video/mp4" />
-                        <source src="movie.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.         
-                      </video>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-1db0089 elementor-tablet-align-justify elementor-widget-mobile__width-inherit elementor-align-center elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-xpro-button"
-                  data-id="1db0089"
-                  data-element_type="widget"
-                  data-widget_type="xpro-button.default"
-                >
-                  <div class="elementor-widget-container">
-                    <a
-                      href="#"
-                      class="xpro-elementor-button xpro-button-bg-animation hvr-rectangle-out xpro-align-icon-left"
-                    >
-                      <span class="xpro-elementor-button-inner">
-                        <span class="xpro-elementor-button-media"
-                          ><i
-                            aria-hidden="true"
-                            class="elementoricon elementor-iconvector"
-                          ></i
-                        ></span>
-                        <span class="xpro-button-text">Buy SPROTO</span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-012bf78 e-con-full e-flex e-con e-child"
-                data-id="012bf78"
-                data-element_type="container"
-              >
-                <div
-                  class="elementor-element elementor-element-ab4d975 elementor-widget elementor-widget-video"
-                  data-id="ab4d975"
-                  data-element_type="widget"
-                  data-settings='{"video_type":"hosted","autoplay":"yes","play_on_mobile":"yes","mute":"yes","loop":"yes"}'
-                  data-widget_type="video.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      class="e-hosted-video elementor-wrapper elementor-open-inline"
-                    >
-                      <video
-                        width="500"
-                        height="500"
-                        autoplay=""
-                        loop=""
-                        muted=""
-                        class="elementor-video"
-                        style="background-color: transparent"
-                      >
-                        <source src="/assets/video/2.webm" type="video/mp4" />
-                        <source src="movie.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.         
-                      </video>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-23fc201 e-con-full e-flex e-con e-child"
-                data-id="23fc201"
-                data-element_type="container"
-              >
-                <div
-                  class="elementor-element elementor-element-e505d32 elementor-widget elementor-widget-video"
-                  data-id="e505d32"
-                  data-element_type="widget"
-                  data-settings='{"video_type":"hosted","autoplay":"yes","play_on_mobile":"yes","mute":"yes","loop":"yes"}'
-                  data-widget_type="video.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      class="e-hosted-video elementor-wrapper elementor-open-inline"
-                    >
-                      <video
-                        width="500"
-                        height="500"
-                        autoplay=""
-                        loop=""
-                        muted=""
-                        class="elementor-video"
-                        style="background-color: transparent"
-                      >
-                        <source src="/assets/video/4.webm" type="video/mp4" />
-                        <source src="movie.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.         
-                      </video>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-b3d737f elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-gallery"
-              data-id="b3d737f"
-              data-element_type="widget"
-              data-settings='{"columns":3,"columns_tablet":3,"columns_mobile":2,"gap":{"unit":"px","size":20,"sizes":[]},"gap_laptop":{"unit":"px","size":20,"sizes":[]},"aspect_ratio":"1:1","lazyload":"yes","gallery_layout":"grid","gap_tablet":{"unit":"px","size":10,"sizes":[]},"gap_mobile":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
-              data-widget_type="gallery.default"
-            >
-              <div class="elementor-widget-container">
-                <div class="elementor-gallery__container">
-                  <a
-                    class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                    href="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-1-1.webp"
-                    data-elementor-open-lightbox="yes"
-                    data-elementor-lightbox-slideshow="b3d737f"
-                    data-elementor-lightbox-title="What-Is-SPROTO-1-1.webp"
-                    data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzUxLCJ1cmwiOiJodHRwczpcL1wvc3Byb3RvLmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8xMVwvV2hhdC1Jcy1TUFJPVE8tMS0xLndlYnAiLCJzbGlkZXNob3ciOiJiM2Q3MzdmIn0%3D"
-                  >
-                    <div
-                      class="e-gallery-image elementor-gallery-item__image"
-                      data-thumbnail="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-1-1-1024x1024.webp"
-                      data-width="800"
-                      data-height="800"
-                      aria-label=""
-                      role="img"
-                    ></div>
-                    <div class="elementor-gallery-item__overlay"></div>
-                  </a>
-                  <a
-                    class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                    href="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy-2.webp"
-                    data-elementor-open-lightbox="yes"
-                    data-elementor-lightbox-slideshow="b3d737f"
-                    data-elementor-lightbox-title="What Is SPROTO - Copy (2)"
-                    data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzgxLCJ1cmwiOiJodHRwczpcL1wvc3Byb3RvLmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8xMVwvV2hhdC1Jcy1TUFJPVE8tQ29weS0yLndlYnAiLCJzbGlkZXNob3ciOiJiM2Q3MzdmIn0%3D"
-                  >
-                    <div
-                      class="e-gallery-image elementor-gallery-item__image"
-                      data-thumbnail="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy-2-1024x1024.webp"
-                      data-width="800"
-                      data-height="800"
-                      aria-label=""
-                      role="img"
-                    ></div>
-                    <div class="elementor-gallery-item__overlay"></div>
-                  </a>
-                  <a
-                    class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                    href="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy-3.webp"
-                    data-elementor-open-lightbox="yes"
-                    data-elementor-lightbox-slideshow="b3d737f"
-                    data-elementor-lightbox-title="What Is SPROTO - Copy (3)"
-                    data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzgyLCJ1cmwiOiJodHRwczpcL1wvc3Byb3RvLmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8xMVwvV2hhdC1Jcy1TUFJPVE8tQ29weS0zLndlYnAiLCJzbGlkZXNob3ciOiJiM2Q3MzdmIn0%3D"
-                  >
-                    <div
-                      class="e-gallery-image elementor-gallery-item__image"
-                      data-thumbnail="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy-3-1024x1024.webp"
-                      data-width="800"
-                      data-height="800"
-                      aria-label=""
-                      role="img"
-                    ></div>
-                    <div class="elementor-gallery-item__overlay"></div>
-                  </a>
-                  <a
-                    class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                    href="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy.webp"
-                    data-elementor-open-lightbox="yes"
-                    data-elementor-lightbox-slideshow="b3d737f"
-                    data-elementor-lightbox-title="What Is SPROTO - Copy"
-                    data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzgzLCJ1cmwiOiJodHRwczpcL1wvc3Byb3RvLmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8xMVwvV2hhdC1Jcy1TUFJPVE8tQ29weS53ZWJwIiwic2xpZGVzaG93IjoiYjNkNzM3ZiJ9"
-                  >
-                    <div
-                      class="e-gallery-image elementor-gallery-item__image"
-                      data-thumbnail="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-Copy-1024x1024.webp"
-                      data-width="800"
-                      data-height="800"
-                      aria-label=""
-                      role="img"
-                    ></div>
-                    <div class="elementor-gallery-item__overlay"></div>
-                  </a>
-                  <a
-                    class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                    href="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-2.webp"
-                    data-elementor-open-lightbox="yes"
-                    data-elementor-lightbox-slideshow="b3d737f"
-                    data-elementor-lightbox-title="What Is SPROTO"
-                    data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Nzg0LCJ1cmwiOiJodHRwczpcL1wvc3Byb3RvLmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8xMVwvV2hhdC1Jcy1TUFJPVE8tMi53ZWJwIiwic2xpZGVzaG93IjoiYjNkNzM3ZiJ9"
-                  >
-                    <div
-                      class="e-gallery-image elementor-gallery-item__image"
-                      data-thumbnail="https://sproto.io/wp-content/uploads/2024/11/What-Is-SPROTO-2-1024x1024.webp"
-                      data-width="800"
-                      data-height="800"
-                      aria-label=""
-                      role="img"
-                    ></div>
-                    <div class="elementor-gallery-item__overlay"></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- small gallery -->
+
           <div
             class="elementor-element elementor-element-89dfea0 e-con-full e-flex e-con e-child"
             data-id="89dfea0"
@@ -2793,6 +2635,122 @@ xxxxxxxxxxxxxxxxxxxxxxxx</textarea
               </div>
             </div>
           </div>
+          <!-- memes gallery -->
+          <section style="padding: 10px 0 100px">
+            <div
+              class="elementor-element elementor-element-216bfab elementor-widget elementor-widget-heading"
+              data-id="216bfab"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2
+                  class="elementor-heading-title elementor-size-default"
+                  style="
+                    font-family: 'peFont', Sans-serif;
+                    font-size: 150px;
+                    font-weight: 400;
+                    line-height: 240px;
+                    letter-spacing: -2.7px;
+                    -webkit-text-stroke-width: 3px;
+                    stroke-width: 5px;
+                    -webkit-text-stroke-color: #f39c12;
+                    stroke: #f39c12;
+                    text-shadow: 0px 2px 0px #f39c12;
+                  "
+                >
+                  Memes
+                </h2>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slide-track">
+                <div class="slide">
+                  <img src="/assets/img/meme (1).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (2).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (3).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (4).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (1).jpg" alt="slide" />
+                </div>
+
+                <div class="slide">
+                  <img src="/assets/img/meme (2).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (3).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (4).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (1).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (2).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (3).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (4).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (1).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (2).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (3).jpg" alt="slide" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/img/meme (4).jpg" alt="slide" />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="slider">
+			  <div class="slide-track slide-track1">
+				<div class="slide">
+				  <img src="/assets/img/meme (1).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (2).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (3).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (4).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (1).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (1).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (2).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (3).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (4).jpg" alt="slide" />
+				</div>
+				<div class="slide">
+				  <img src="/assets/img/meme (1).jpg" alt="slide" />
+				</div>
+			  </div>
+			</div> -->
+          </section>
           <div
             class="elementor-element elementor-element-ffc632c e-con-full e-flex e-con e-child"
             style="background-color: #f39c12"
